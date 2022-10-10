@@ -38,7 +38,7 @@ def page_error_404(error):
 
 @app.errorhandler(DataSourceError)
 def page_error_data_source_error(error):
-    return f"Ошибка, на сайте поломались какие-то данные - {error}", 500
+    return f"Ошибка, на сайте где-то поломались какие-то данные - {error}", 500
 
 if __name__ == '__main__':
 
