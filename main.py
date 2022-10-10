@@ -33,7 +33,7 @@ def page_error_404(error):
 
 @app.errorhandler(500)
 def page_error_404(error):
-    return f"На сервре произошла какая-то ошибка - {error}", 500
+    return f"На сервре произошла какая-то странная ошибка - {error}", 500
 
 
 @app.errorhandler(DataSourceError)
